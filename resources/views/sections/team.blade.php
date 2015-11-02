@@ -2,24 +2,42 @@
     <section id="team" class="section team-section align-center dark-text">
         <div class="container">
             <div class="section-header">
-                <h2>ENTRE <span class="highlight">BAMBALINAS</span></h2>
-                <p>Con años de experiencia, en el desarrollo de aplicaciones web, nuestro equipo humano es inmejorable. <br> Somos ese tipo de personsas que nos gusta aprender cosas nuevas a diario.</p>
+                <h2>{!! trans("page.team.title") !!}</h2>
+                <p>{!! trans("page.team.text") !!}</p>
             </div>
             <div class="section-content row">
-             
                 <div class="col-md-3 col-sm-3 col-xs-6 col-md-offset-3 col-sm-offset-3 animated" data-animation="fadeInUp" data-delay="200" data-duration="500">
                     <div class="team-member">
                         <div class="photo-wrapper">
                             <div class="overlay-wrapper">
-                                <img src="assets/img/people/team-2.jpg" alt="">
+                                <img src="assets/img/people/boudydegeer.jpg" alt="">
                                 <div class="overlay-content">
                                     <div class="text-wrapper">
                                         <div class="text-container">
-                                            <p>Mike has worked with CARE USA, for 12 years holding positions such as Deputy Country Director to Director of Programs and Information Systems.</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                     <ul class="socials-block align-center">
-                                        <li><a href="#" class="skype" title="Skype"><i class="fa fa-skype"></i></a></li>
+                                        <li>
+                                            <a href="skype:boudydegeer" class="skype" title="Skype">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:boudydegeer@mosaiqo.com" class="email" title="Email">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/boudydegeer" class="twitter" title="Twitter" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/boudydegeer" class="github" title="Github" target="_blank">
+                                                <i class="fa fa-github-alt"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -37,12 +55,20 @@
                                 <div class="overlay-content">
                                     <div class="text-wrapper">
                                         <div class="text-container">
-                                            <p>Ellen has over 13 years of experience in development projects as a senior consultant and project manager in the areas of project management, fund and board development, strategic & financial planning, monitoring & evaluation.</p>
+                                            <p></p>
                                         </div>
                                     </div>
                                     <ul class="socials-block align-center">
-                                        <li><a href="#" class="email" title="Email"><i class="fa fa-envelope-o"></i></a></li>
-                                        <li><a href="#" class="twitter" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <li>
+                                            <a href="mailtpo:jrcamps@mosaiqo.com" class="email" title="Email">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </a>
+                                        </li>
+                                         <li>
+                                            <a href="https://github.com/josepramon" class="github" title="Github" target="_blank">
+                                                <i class="fa fa-github-alt"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

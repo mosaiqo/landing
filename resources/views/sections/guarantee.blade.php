@@ -3,13 +3,13 @@
             <div class="col-md-12 col-lg-9">
                 <i class="icon icon-seo-icons-24 pull-left"></i>
                 <article class="pull-left">
-                    <h2>RESERVA AHORA TU PAGINA!</h2>
-                    <p class="thin">Registrate ahora para ser uno de los primeros usuarios de mosaiqo.</p>
+                    <h2>{!! trans("page.guarantee.title") !!}</h2>
+                    <p class="thin">{!! trans("page.guarantee.text") !!}</p>
                 </article>
             </div>
 
             <div class="col-md-12 col-lg-3">
-                <a href="#newsletter" class="btn btn-outline" style="margin-top: 7px;">Registrate</a>
+                <a href="#newsletter" class="btn btn-outline" style="margin-top: 7px;">{!! trans("page.guarantee.button") !!}</a>
             </div>
         </div>
     </section>

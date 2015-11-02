@@ -3,7 +3,8 @@
             <div class="container">
                 <div class="navigation-brand">
                     <div class="brand-logo">
-                        <a href="index.html" class="logo"></a><a href="index.html" class="logo logo-alt"></a>
+                        <a href="/" class="logo"></a>
+                        <a href="/" class="logo logo-alt"></a>
                     </div>
                 </div>
                 <button class="navigation-toggle">
@@ -13,13 +14,13 @@
                 </button>
                 <div class="navigation-navbar collapsed">
                     <ul class="navigation-bar navigation-bar-right">
-                        <li><a href="#hero">Inicio</a></li>
-                        <li><a href="#about">El producto</a></li>
-                        <li><a href="#features">Caracteristicas</a></li>
+                        <li><a href="#hero">{{ trans("HOME") }}</a></li>
+                        <li><a href="#about">{{ trans("THE PRODUCT") }}</a></li>
+                        <li><a href="#features">{{ trans("FEATURES") }}</a></li>
                         {{-- <li><a href="#product">Prices</a></li> --}}
                         {{-- <li><a href="#feedback">Feedback</a></li> --}}
-                        <li><a href="#team">El equipo</a></li>
-                        <li><a href="#guarantee">Estemos en contacto</a></li>
+                        <li><a href="#team">{{ trans("TEAM") }}</a></li>
+                        <li><a href="#guarantee">{{ trans("STAY IN CONTACT") }}</a></li>
                     </ul>
                     {{-- <ul class="navigation-bar navigation-bar-right">
                         <li><a href="register.html">Login</a></li>

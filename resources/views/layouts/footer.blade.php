@@ -5,11 +5,11 @@
                 <div class="logo-wrapper">
                     <img width="130" height="31" src="assets/img/logo.png" alt="logo" />
                 </div>
-                <p>Desde Mosaiqo creemos que podemos ayudar a que mucha mas gente tenga su sitio web, independiente mente de donde sea, o cual sea su idea. Creemos en una internet libre y para todos.</p>
+                <p>{!! trans("page.footer.cite") !!}</p>
                 <p><strong>Boudy de Geer, CEO</strong>.</p>
             </div>
             <div class="col-sm-5 social-wrap col-xs-12">
-                <strong class="heading">Social Networks</strong>
+                <strong class="heading">{!! trans("page.footer.social") !!}</strong>
                 <ul class="list-inline socials">
                     <li><a href="#"><span class="icon icon-socialmedia-08"></span></a></li>
                     <li><a href="#"><span class="icon icon-socialmedia-09"></span></a></li>
@@ -25,14 +25,14 @@
                 </ul>
             </div>
             <div class="col-sm-3 col-xs-12">
-                <strong class="heading">Our Contacts</strong>
+                <strong class="heading">{!! trans("page.footer.contact") !!}</strong>
                 <ul class="list-unstyled">
                     <li><span class="icon icon-chat-messages-14"></span><a href="mailto:helo@mosaiqo.com">helo@mosaiqo.com</a></li>
                     <li><span class="icon icon-seo-icons-34"></span>c/Constelacion 2 1ºA , Alicante, Alicante (España), 03007</li>
-                    <li><span class="icon icon-seo-icons-17"></span>963 57 57 57</li>
+                    <li><span class="icon icon-seo-icons-17"></span>966 37 72 17</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="copyright">mosaiqo. 2011. Todos los derechos reservados.</div>
+    <div class="copyright">mosaiqo &copy; 2011 {!! trans("page.footer.rights") !!}</div>
 </footer>

@@ -4990,7 +4990,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	background-size: cover;
 	padding: 0 0 30px;
 	font-weight: 300;
-	background-image: url('../img//background/low_poly_background.jpg');
+	background: rgba(255,255, 255, 1) url('/assets/img/background/background.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-attachment: fixed;
@@ -5684,7 +5684,7 @@ body.always-mobile .fixed-menu .navigation-header.white-dropdown .navigation-bar
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	background-image: url('../img/background/low_poly_background.jpg');
+	background-image: url('/assets/img/background/background.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
