@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\View;
 
 class SetLocale
 {
@@ -16,16 +17,37 @@ class SetLocale
      */
     public function handle($request, Closure $next)
     {
-        switch($request->server("HTTP_HOST"))
+        if($request->has("lang"))
         {
-            case "mosaiqo.dev" : $locale = "es"; break;
-            case "mosaiqo.es" : $locale = "es"; break;
-            case "mosaiqo.de" : $locale = "de"; break;
-            case "mosaiqo.cat" : $locale = "cat"; break;
-            case "mosaiqo.com" : 
-            default            : 
-                $locale = "en"; 
+            $locale = $request->get("lang");
         }
+        else
+        {
+            switch($request->server("HTTP_HOST"))
+            {
+                case "mosaiqo.dev" : 
+                case "es.mosaiqo.dev" : 
+                case "www.mosaiqo.dev" : 
+                    $locale = "es"; break;
+                case "mosaiqo.de" : 
+                case "www.mosaiqo.de" : 
+                case "de.mosaiqo.com" : 
+                    $locale = "de"; break;
+                case "mosaiqo.cat" : 
+                case "www.mosaiqo.cat" : 
+                case "cat.mosaiqo.com" : 
+                    $locale = "ca"; break;
+                case "mosaiqo.com" : 
+                case "www.mosaiqo.com" : 
+                case "en.mosaiqo.com" : 
+                default            : 
+                    $locale = "en"; 
+            }    
+        }
+        $locales = ["es" => "http://mosaiqo.es", "en" => "http://mosaiqo.com", "ca" => "http://mosaiqo.cat",/*"de" => "http://mosaiqo.de"*/];
+        
+        View::share("locales", $locales);
+        View::share("alternate", $locale);
 
         App::setLocale($locale);
         return $next($request);

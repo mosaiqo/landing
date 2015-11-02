@@ -18,7 +18,7 @@ return [
     "hero" => [
         "heading" => "<span class='highlight'>Cualquiera</span> puede tener ahora su web.",
         "sub-heading" => "No espere más, lance ya su web.",
-        "action-button" => "REGISTRESE AHORA",
+        "action-button" => "REGISTRATE AHORA",
         "image" => [
             "src" => "assets/img/features/app_block_es.png",
             "alt" => "Mosaiqo Dashboard",
