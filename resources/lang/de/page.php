@@ -16,7 +16,7 @@ return [
         "sub-heading" => "Don't wait, launch it now.",
         "action-button" => "SIGN UP NOW",
          "image" => [
-            "src" => "assets/img/features/app_block_en.png",
+            "src" => "assets/img/features/app_block_de.png",
             "alt" => "Mosaiqo Dashboard",
         ],
     ],

@@ -7,7 +7,9 @@
         </div>
         <div class="image-wrapper">
             <div class="container">
-                <img src="assets/img/features/{!! trans("page.hero.image") !!}" alt="video" class="img-responsive animated" data-animation="fadeInUp" data-delay="400" data-duration="700" />
+                <img src="{!! trans("page.hero.image.src") !!}" alt="{!! trans("page.hero.image.alt") !!}" 
+                    class="img-responsive animated" data-animation="fadeInUp" 
+                    data-delay="400" data-duration="700" />
             </div>
         </div>
     </div>

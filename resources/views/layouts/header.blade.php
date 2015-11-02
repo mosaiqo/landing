@@ -14,13 +14,13 @@
                 </button>
                 <div class="navigation-navbar collapsed">
                     <ul class="navigation-bar navigation-bar-right">
-                        <li><a href="#hero">{{ trans("HOME") }}</a></li>
-                        <li><a href="#about">{{ trans("THE PRODUCT") }}</a></li>
-                        <li><a href="#features">{{ trans("FEATURES") }}</a></li>
+                        <li><a href="#hero">{{ trans("page.menu.home") }}</a></li>
+                        <li><a href="#about">{{ trans("page.menu.product") }}</a></li>
+                        <li><a href="#features">{{ trans("page.menu.features") }}</a></li>
                         {{-- <li><a href="#product">Prices</a></li> --}}
                         {{-- <li><a href="#feedback">Feedback</a></li> --}}
-                        <li><a href="#team">{{ trans("TEAM") }}</a></li>
-                        <li><a href="#guarantee">{{ trans("STAY IN CONTACT") }}</a></li>
+                        <li><a href="#team">{{ trans("page.menu.team") }}</a></li>
+                        <li><a href="#guarantee">{{ trans("page.menu.contact") }}</a></li>
                     </ul>
                     {{-- <ul class="navigation-bar navigation-bar-right">
                         <li><a href="register.html">Login</a></li>
