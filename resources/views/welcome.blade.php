@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title> Mosaiqo | Anyone can now have their web </title>
-    <meta name="description" content="Your website is just the beginning. Bring your idea and let’s grow together. Mosaiqo is developed by experts for experts, but also for beginners">
+    <title> Mosaiqo | {{ trans("page.header.title") }} </title>
+    <meta name="description" content="{{ trans("page.header.description") }}">
     <link rel="shortcut icon" href="assets/img/favicon.ico">
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">

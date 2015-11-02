@@ -1,6 +1,10 @@
 <?php
 
 return [
+    "head" => [
+        "title" => "Anyone can now have their web",
+        "description" => "Your website is just the beginning. Bring your idea and let’s grow together. Mosaiqo is developed by experts for experts, but also for beginners",
+    ],
     // HEADER
     'menu' => [
         "home" => "HOME",
