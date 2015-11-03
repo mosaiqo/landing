@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h5 class="name">Josep Ramón Camps</h5>
+                        <h5 class="name">Josep Ramon Camps</h5>
                         <p class="position">CTO & Developer</p>
                     </div>
                 </div>
