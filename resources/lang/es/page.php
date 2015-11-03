@@ -177,9 +177,8 @@ return [
     ],
     // COOKIES
     "cookies" => [
-        "text" => "In Mosaiqo we believe we can help many more people, have their own website.
-                   <br>Independent of wherever he is or whatever their idea is.
-                   <br>We believe in a free and available internet for everyone."
+        "message" => "<strong>Mosaiqo utiliza cookies propias y de terceros para mejorar tu experiencia en nuestra web.</strong> 
+                      Si continuas navegando, consideramos que aceptas su uso."
     ],
 
 ];
