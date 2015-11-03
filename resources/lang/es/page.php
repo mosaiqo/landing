@@ -12,6 +12,9 @@ return [
         'features' => "CARACTERISTICAS",
         "team" => "NUESTRO EQUIPO",
         "contact" => "ESTEMOS EN CONTACTO",
+        "language" => [
+            "label" => "¿Prefieres otro idioma?"
+        ]
     ],
 
     // HERO
@@ -20,7 +23,7 @@ return [
         "sub-heading" => "No espere más, lance ya su web.",
         "action-button" => "REGISTRATE AHORA",
         "image" => [
-            "src" => "assets/img/features/app_block_es.png",
+            "src" => "/img/features/app_block_es.png",
             "alt" => "Mosaiqo Dashboard",
         ],
     ],
@@ -32,7 +35,7 @@ return [
                 "label" => "¿PARA QUIEN ES?",
                 "content" => [
                     "image" => [
-                       "src" => "assets/img/features/sites_es.png",
+                       "src" => "/img/features/sites_es.png",
                        "alt" => "Paginas que puedes hacer con Mosaiqo" 
                     ],
                     "title" => "<span class='highlight'>PRODUCTO</span> O <span class='highlight'>SERVICIO</span>",
@@ -46,7 +49,7 @@ return [
                 "label" => "¿POR QUE?",
                 "content" => [
                     "image" => [
-                       "src" => "assets/img/features/phone_es.png",
+                       "src" => "/img/features/phone_es.png",
                        "alt" => "Escritorio de Mosaiqo en el movil" 
                     ],
                     "title" => "CENTRATE EN EL <span class='highlight'>CONTENIDO</span>",
@@ -97,7 +100,7 @@ return [
                 "title" => "Potente, simple, sencillo, bonito.",
                 "sub-title" => "Mosaiqo esta desarrollado por expertos, para expertos y principiantes.",
                 "image" => [
-                    "src" => "assets/img/features/mosaiqo_dashboard_macbook_es.png",
+                    "src" => "/img/features/mosaiqo_dashboard_macbook_es.png",
                     "alt" => "Escritorio de Mosaiqo en un Macbook"
                 ]
             ],
@@ -105,7 +108,7 @@ return [
                 "title" => "Es para todo el mundo y para ti",
                 "sub-title" => "La herramienta profesional disponible para todos.",
                 "image" => [
-                    "src" => "assets/img/features/mosaiqo_dashboard_ipad_es.png",
+                    "src" => "/img/features/mosaiqo_dashboard_ipad_es.png",
                     "alt" => "Escritorio de Mosaiqo en el iPad"
                 ]
             ],
@@ -113,7 +116,7 @@ return [
                 "title" => "ADAPTADO A MOVILES",
                 "sub-title" => "Mosaiqo es un sistema adaptado al 100% a todos los dispositivos.",
                 "image" => [
-                    "src" => "assets/img/features/mosaiqo_dashboard_on_devices_es.png",
+                    "src" => "/img/features/mosaiqo_dashboard_on_devices_es.png",
                     "alt" => "Escrtorio de Mosaiqo en un MacBook y iPhone"
                 ]
             ],

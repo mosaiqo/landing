@@ -3,7 +3,7 @@
         <div class="footer-content row">
             <div class="col-sm-4 col-xs-12">
                 <div class="logo-wrapper">
-                    <img width="130" height="31" src="assets/img/logo.png" alt="logo" />
+                    <img width="130" height="31" src="/img/logo.png" alt="logo" />
                 </div>
                 <p>{!! trans("page.footer.cite") !!}</p>
                 <p><strong>Boudy de Geer, CEO</strong>.</p>

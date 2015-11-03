@@ -10,7 +10,7 @@
                     <div class="team-member">
                         <div class="photo-wrapper">
                             <div class="overlay-wrapper">
-                                <img src="assets/img/people/boudydegeer.jpg" alt="">
+                                <img src="/img/people/boudydegeer.jpg" alt="">
                                 <div class="overlay-content">
                                     <div class="text-wrapper">
                                         <div class="text-container">
@@ -51,7 +51,7 @@
                     <div class="team-member">
                         <div class="photo-wrapper">
                             <div class="overlay-wrapper">
-                                <img src="assets/img/people/team-3.jpg" alt="">
+                                <img src="/img/people/jrcamps.jpg" alt="">
                                 <div class="overlay-content">
                                     <div class="text-wrapper">
                                         <div class="text-container">

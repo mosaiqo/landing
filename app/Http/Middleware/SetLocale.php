@@ -45,7 +45,9 @@ class SetLocale
             }    
         }
         $locales = ["es" => "http://mosaiqo.es", "en" => "http://mosaiqo.com", "ca" => "http://mosaiqo.cat",/*"de" => "http://mosaiqo.de"*/];
+        $languages = ["es" => "Español", "en" => "English", "ca" => "Catalá",/*"de" => "Deutsch"*/];
         
+        View::share("languages", $languages);
         View::share("locales", $locales);
         View::share("alternate", $locale);
 

@@ -12,6 +12,9 @@ return [
         'features' => "FEATURES",
         "team" => "TEAM",
         "contact" => "STAY IN CONTACT",
+        "language" => [
+            "label" => "Do you prefer an other language?"
+        ]
     ],
 
     // HERO
@@ -20,7 +23,7 @@ return [
         "sub-heading" => "Don't wait, launch it now.",
         "action-button" => "SIGN UP NOW",
          "image" => [
-            "src" => "assets/img/features/app_block_en.png",
+            "src" => "/img/features/app_block_en.png",
             "alt" => "Mosaiqo Dashboard",
         ],
     ],
@@ -32,7 +35,7 @@ return [
                 "label" => "FOR WHOM?",
                 "content" => [
                     "image" => [
-                       "src" => "assets/img/features/sites_en.png",
+                       "src" => "/img/features/sites_en.png",
                        "alt" => "Sites you can build with Mosaiqo" 
                     ],
                     "title" => "<span class='highlight'>PRODUCT</span> OR <span class='highlight'>SERVICE</span>",
@@ -47,7 +50,7 @@ return [
                 "label" => "WHY?",
                 "content" => [
                     "image" => [
-                       "src" => "assets/img/features/phone_en.png",
+                       "src" => "/img/features/phone_en.png",
                        "alt" => "Mosaiqo dashboard on mobile phone" 
                     ],
                     "title" => "Focus on the <span class='highlight'>content</span>",
@@ -96,7 +99,7 @@ return [
                 "title" => "Powerful. Beautiful. Easy",
                 "sub-title" => "Mosaiqo is developed by experts for experts, but also for beginners.",
                 "image" => [
-                    "src" => "assets/img/features/mosaiqo_dashboard_macbook_en.png",
+                    "src" => "/img/features/mosaiqo_dashboard_macbook_en.png",
                     "alt" => "Mosaiqo dashboard on a Macbook"
                 ]
             ],
@@ -104,7 +107,7 @@ return [
                 "title" => "It is for everyone and for you",
                 "sub-title" => "The professional tool available to everyone.",
                 "image" => [
-                    "src" => "assets/img/features/mosaiqo_dashboard_ipad_en.png",
+                    "src" => "/img/features/mosaiqo_dashboard_ipad_en.png",
                     "alt" => "Mosaiqo dashboard on a iPad"
                 ]
             ],
@@ -112,7 +115,7 @@ return [
                 "title" => "Adapted to mobile",
                 "sub-title" => "Mosaiqo will adapted to all system devices.",
                 "image" => [
-                    "src" => "assets/img/features/mosaiqo_dashboard_on_devices_en.png",
+                    "src" => "/img/features/mosaiqo_dashboard_on_devices_en.png",
                     "alt" => "Mosaiqo dashboard on a MacBook and iPhone"
                 ]
             ],
