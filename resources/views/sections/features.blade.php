@@ -16,7 +16,7 @@
                         <a href="#profile" data-toggle="tab">
                             <div class="tab-info">
                                 <div class="tab-title">{!! trans("page.features.tabs.second.title") !!}</div>
-                                <div class="tab-desc">{!! trans("page.features.tabs.second.sub-title") !!}.</div>
+                                <div class="tab-desc">{!! trans("page.features.tabs.second.sub-title") !!}</div>
                             </div>
                             <!--<div class="tab-icon"><span class="icon icon-seo-icons-27"></span></div>-->
                         </a>

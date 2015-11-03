@@ -60,7 +60,7 @@
                                     </div>
                                     <ul class="socials-block align-center">
                                         <li>
-                                            <a href="mailtpo:jrcamps@mosaiqo.com" class="email" title="Email">
+                                            <a href="mailto:jrcamps@mosaiqo.com" class="email" title="Email">
                                                 <i class="fa fa-envelope-o"></i>
                                             </a>
                                         </li>

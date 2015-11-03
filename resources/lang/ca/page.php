@@ -2,7 +2,7 @@
 
 return [
     'head' => [
-        "title" => "Ara qualsevol pot tenir la seva web.",
+        "title" => "Ara tothom pot tenir la seva web.",
         "description" => "El teu lloc web és només el principi, porta la teva idea i creixerem junts. Mosaiqo està desenvolupat per experts, per a experts i principiants.",
     ],
     // HEADER
@@ -19,7 +19,7 @@ return [
 
     // HERO
     "hero" => [
-        "heading" => " Ara <span class='highlight'>qualsevol</span> pot tenir la seva web.",
+        "heading" => " Ara <span class='highlight'>tothom</span> pot tenir la seva web.",
         "sub-heading" => "No esperis més, crea la teva web.",
         "action-button" => "REGISTRA'T ARA",
         "image" => [
