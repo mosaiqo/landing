@@ -18,7 +18,7 @@ class SetLocale
     public function handle($request, Closure $next)
     {
         $hotjar = 00000;
-        $google = "00000";
+        $globalGoogle = 'UA-32678673-1';
 
         if($request->has("lang"))
         {
@@ -59,7 +59,7 @@ class SetLocale
                 case "en.mosaiqo.com" : 
                 default            :
                     $hotjar = 49650; 
-                    $google = 'UA-32678673-1';
+                    $google = 'UA-32678673-4';
                     $locale = "en"; 
             }    
         }
@@ -67,6 +67,7 @@ class SetLocale
         $languages = ["es" => "Español", "en" => "English", "ca" => "Catalá",/*"de" => "Deutsch"*/];
         
         View::share("google", $google);
+        View::share("gloabalGoogle", $globalGoogle);
         View::share("hotjar", $hotjar);
         View::share("languages", $languages);
         View::share("locales", $locales);
