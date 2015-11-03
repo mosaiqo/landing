@@ -28,6 +28,8 @@ class SetLocale
                 case "mosaiqo.dev" : 
                 case "es.mosaiqo.dev" : 
                 case "www.mosaiqo.dev" : 
+                case "mosaiqo.es" : 
+                case "www.mosaiqo.es" : 
                     $locale = "es"; break;
                 case "mosaiqo.de" : 
                 case "www.mosaiqo.de" : 
