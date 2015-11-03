@@ -18,6 +18,7 @@ class SetLocale
     public function handle($request, Closure $next)
     {
         $hotjar = 00000;
+        $google = "00000";
 
         if($request->has("lang"))
         {
@@ -37,30 +38,35 @@ class SetLocale
                 case "es.mosaiqo.com" : 
                     $locale = "es"; 
                     $hotjar = 97688;
+                    $google = 'UA-32678673-2';
                     break;
                 case "mosaiqo.de" : 
                 case "www.mosaiqo.de" : 
                 case "de.mosaiqo.com" : 
                     $locale = "de";
-                    $hotjar = 00000;  
+                    $hotjar = 00000; 
+                    $google = ""; 
                     break;
                 case "mosaiqo.cat" : 
                 case "www.mosaiqo.cat" : 
                 case "cat.mosaiqo.com" : 
                     $locale = "ca"; 
-                    $hotjar = 97689; 
+                    $hotjar = 97689;
+                    $google = 'UA-32678673-3'; 
                     break;
                 case "mosaiqo.com" : 
                 case "www.mosaiqo.com" : 
                 case "en.mosaiqo.com" : 
                 default            :
                     $hotjar = 49650; 
+                    $google = 'UA-32678673-1';
                     $locale = "en"; 
             }    
         }
         $locales = ["es" => "http://mosaiqo.es", "en" => "http://mosaiqo.com", "ca" => "http://mosaiqo.cat",/*"de" => "http://mosaiqo.de"*/];
         $languages = ["es" => "Español", "en" => "English", "ca" => "Catalá",/*"de" => "Deutsch"*/];
         
+        View::share("google", $google);
         View::share("hotjar", $hotjar);
         View::share("languages", $languages);
         View::share("locales", $locales);

@@ -1,22 +1,29 @@
 <?php
 
 return [
+    'head' => [
+        "title" => "Ara qualsevol pot tenir la seva web.",
+        "description" => "El teu lloc web és només el principi, porta la teva idea i creixerem junts. Mosaiqo està desenvolupat per experts, per a experts i principiants.",
+    ],
     // HEADER
     'menu' => [
-        "home" => "HOME",
-        "product" => "THE PRODUCT",
-        'features' => "FEATURES",
-        "team" => "TEAM",
-        "contact" => "STAY IN CONTACT",
+        "home" => "INICI",
+        "product" => "EL PRODUCTE",
+        'features' => "CARACTERÍSTIQUES",
+        "team" => "EL NOSTRE EQUIP",
+        "contact" => "ESTEM EN CONTACTE",
+        "language" => [
+            "label" => "Prefereixes un altre idioma?"
+        ]
     ],
 
     // HERO
     "hero" => [
-        "heading" => "<span class='highlight'>Anyone</span> can now have their website.",
-        "sub-heading" => "Don't wait, launch it now.",
-        "action-button" => "SIGN UP NOW",
-         "image" => [
-            "src" => "assets/img/features/app_block_cat.png",
+        "heading" => " Ara <span class='highlight'>qualsevol</span> pot tenir la seva web.",
+        "sub-heading" => "No esperis més, crea la teva web.",
+        "action-button" => "REGISTRA'T ARA",
+        "image" => [
+            "src" => "/img/features/app_block_ca.png",
             "alt" => "Mosaiqo Dashboard",
         ],
     ],
@@ -25,49 +32,50 @@ return [
     "product" => [
         'tabs' => [
             "first" => [
-                "label" => "FOR WHOM?",
+                "label" => "PER A QUI?",
                 "content" => [
                     "image" => [
-                       "src" => "assets/img/features/sites_en.png",
-                       "alt" => "Sites you can build with Mosaiqo" 
+                       "src" => "/img/features/sites_ca.png",
+                       "alt" => "Pàgines que pots fer amb Mosaiqo" 
                     ],
-                    "title" => "<span class='highlight'>PRODUCT</span> OR <span class='highlight'>SERVICE</span>",
-                    "sub-title" => "To attract customers, you need a site." ,
-                    "text" => "You will have your online store in a few of minutes, 
-                                  ready to start operating your business, without complications. <br>
-                                  ¿Prefer a blog? In only 5 minutes you'll be writing on your first article. "
+                    "title" => "<span class='highlight'>PRODUCTE</span> O <span class='highlight'>SERVEI</span>",
+                    "sub-title" => "Necessites captar clients, necessites una web." ,
+                    "text" => "Tindràs la teva botiga online llesta en uns minuts, per a començar a vendre sense preocupar-te per res més.<br>
+                               Prefereixes un bloc? en 5 minuts podràs publicar teu primer article, sense complicacions."
                 ]
                 
             ],
             "second" => [
-                "label" => "WHY?",
+                "label" => "PER QUÈ?",
                 "content" => [
                     "image" => [
-                       "src" => "assets/img/features/phone_en.png",
-                       "alt" => "Mosaiqo dashboard on mobile phone" 
+                       "src" => "/img/features/phone_ca.png",
+                       "alt" => "Escriptori de Mosaiqo en el mòbil" 
                     ],
-                    "title" => "Focus on the <span class='highlight'>content</span>",
-                    "sub-title" => "Designed and developed to optimize your time!",
-                    "text" => "You will see how quick and easy it is to create your own website. <br>Businessman or entrepreneurs, Mosaiqo is four you. <br> Your website is just the beginning. Bring your idea and let’s grow together." 
+                    "title" => "CONCENTRA'T EN ELS <span class='highlight'>CONTINGUTS</span>",
+                    "sub-title" => "Dissenyat i desenvolupat per optimitzar el teu temps.",
+                    "text" => "Veuràs amb quina rapidesa i facilitat crees la teva pròpia web. 
+                               <br>Empresari o emprenedor, Mosaiqo és un sitema pensant per a tu.
+                               <br>El teu lloc web és només el principi, porta la teva idea i creixerem junts." 
                 ]
             ],
             "third" => [
-                "label" => "HOW IT WORKS?",
+                "label" => "COM FUNCIONA?",
                 "content" => [
-                    "title" => "IT'S IMPOSSIBLE TO BE SIMPLER",
-                    "sub-title" => "Our system is developed to take away any headaches." ,
+                    "title" => "MÉS FÀCIL IMPOSSIBLE",
+                    "sub-title" => "Mosaiqo està pensat per estalviar-te mals de cap." ,
                     "steps" => [
                         "one" => [
-                            "title" => "SIGN UP",
-                            "text" => "We need some information from you, <br> to start working."
+                            "title" => "REGISTRA'T",
+                            "text" => "Proporciona'ns les teves dades <br> per començar a ttreballar."
                         ],
                         "two" => [
-                             "title" => "OUR SYSTEM MAKES HIS MAGIC",
-                            "text" => "Within seconds our <br> system begins to create your page."
+                             "title" => "EL NOSTRE SISTEMA FA LA SEVA MÀGIA",
+                            "text" => "En un moment el nostre sistema comença a crear la teva pàgina."
                         ], 
                         "three" => [
-                            "title" => "IT RUNS",
-                            "text" => "It is done! Without further complications. <br> It's that easy to have your website."
+                            "title" => "COMENÇA A FUNCIONAR",
+                            "text" => "Ja està! Sense complicacions. <br>Axí de senzill és tenir el teu lloc web."
                         ],
                     ]
                 ]
@@ -77,39 +85,39 @@ return [
     ],
     // REGISTER
     "register" => [
-        "title" => "SIGN UP NOW!",
-        "sub-title" => "Be one of the first members to have a 30 day trial for free, <br> as soon as we open the \"BETA\" to the general public!",
+        "title" => "REGISTRA'T!",
+        "sub-title" => "Siguis un dels primers en gaudir de 30 dies gratuïts,<br> quan obrim la Beta al públic!",
         "form" => [
-            "name" => "Your Full Name",
-            "mail" => "your@mail.com",
-            "button" => "Suscribe"
+            "name" => "Nom complert",
+            "mail" => "elTeu@correu.cat",
+            "button" => "Registra't"
         ]
     ],
     // FEATURES
     "features" => [
         "tabs" => [
             "first" => [
-                "title" => "Powerful. Beautiful. Easy",
-                "sub-title" => "Mosaiqo is developed by experts for experts, but also for beginners.",
+                "title" => "Potent, simple, senzill, atractiu.",
+                "sub-title" => "Mosaiqo està desenvolupat per experts, per a experts i principiants.",
                 "image" => [
-                    "src" => "assets/img/features/mosaiqo_dashboard_macbook_en.png",
-                    "alt" => "Mosaiqo dashboard on a Macbook"
+                    "src" => "/img/features/mosaiqo_dashboard_macbook_ca.png",
+                    "alt" => "Escriptori de Mosaiqo en un Macbook"
                 ]
             ],
             "second" => [
-                "title" => "It is for everyone and for you",
-                "sub-title" => "The professional tool available to everyone.",
+                "title" => "És per tothom. És per tu",
+                "sub-title" => "L'eina profesional disponible per a tothom.",
                 "image" => [
-                    "src" => "assets/img/features/mosaiqo_dashboard_ipad_en.png",
-                    "alt" => "Mosaiqo dashboard on a iPad"
+                    "src" => "/img/features/mosaiqo_dashboard_ipad_ca.png",
+                    "alt" => "Escriptori de Mosaiqo en el iPad"
                 ]
             ],
             "third" => [
-                "title" => "Adapted to mobile",
-                "sub-title" => "Mosaiqo will adapted to all system devices.",
+                "title" => "ADAPTAT MÒBILS",
+                "sub-title" => "Mosaiqo és un sistema completament adaptat a tots els dispositius.",
                 "image" => [
-                    "src" => "assets/img/features/mosaiqo_dashboard_on_devices_en.png",
-                    "alt" => "Mosaiqo dashboard on a MacBook and iPhone"
+                    "src" => "/img/features/mosaiqo_dashboard_on_devices_es.png",
+                    "alt" => "Escriptori de Mosaiqo en un MacBook i iPhone"
                 ]
             ],
         ]
@@ -117,64 +125,68 @@ return [
     // Feature List
     'feature-list' => [
        "first" => [
-            "label" => "MULTI-LANGUAGE",
-            "text" => "Mosaiqo lets you have your website in multiple languages ​​without additional cost, in all your pages."
+            "label" => "MULTI-IDIOMA",
+            "text" => "Mosaiqo et permet tenir el teu lloc web en múltiples llengües, sense cap cost afegit, en totes les teves pàgines."
        ],
        "second" => [
             "label" => "CLOUD",
-            "text" => "The whole system is in the cloud, with redundant servers , balancers and daily backups."
+            "text" => "Tot el sistema està en el núvol, per a què no t'hagis de preocupar de servidors redundants, repartidors de càrrega o backups diàris. Nosaltres ens n'ocupem."
        ],
        "third" => [
-            "label" => "ONLINE SHOP",
-            "text" => "Within seconds you can expand your website, from our online store."
+            "label" => "BOTIGA ONLINE",
+            "text" => "En un moment, pots ampliar el teu web, des de la nostra botiga online."
        ],
        "fourth" => [
             "label" => "RESPONSIVE",
-            "text" => "The system is developed to run on all devices perfectly."
+            "text" => "El sistema està desenvolupat per a funcionar en tots els dispositius perfectament."
        ],
        "fifth" => [
-            "label" => "MAGIC",
-            "text" => "Mosaiqo adds some magical things that will surprise you."
+            "label" => "MÀGIA",
+            "text" => "Mosaiqo afegeix un toc màgic que et sorprendrà."
        ],
        "sixt" => [
-            "label" => "SCALABLE",
-            "text" => "You pay only for what you use, while you do, nothing more."
+            "label" => "ESCALABLE",
+            "text" => "Paga només el que utilitzis, mentre et faci falta. Res més."
        ],
        "seventh" => [
-            "label" => "SUPPORT",
-            "text" => "We offer 24/7 support for all languages ​​supported in the system."
+            "label" => "SUPORT",
+            "text" => "Oferim suport 24/7, en totes les llengües suportades pel sistema.ema."
        ],
        "eight" => [
-            "label" => "NO WAITING TIME",
-            "text" => "Build your online store, blog or web site, ready to use in minutes."
+            "label" => "IMMEDIAT",
+            "text" => "Construeix la teva botiga online, blog o lloc web, llest per a ser utilitzat en uns minuts."
        ],
     ],
     // TEAM
     "team" => [
-        "title" => "BEHIND THE <span class='highlight'>SCENES</span>",
-        "text" => "With years of experience in developing web applications, our human team is unbeatable.
-                   <br> We are the type of persons we like to learn new things every day ." 
+        "title" => "ENTRE <span class='highlight'>BASTIDORS</span>",
+        "text" => "Amb anys d'experiència en el desenvolupament d'aplicacions web, el nostre equip és immillorable. 
+                   <br>Som d'aquesta mena de persones que ens agrada aprendre coses noves tots els dies." 
     ],
     // GUARANTEE
     "guarantee" => [
-        "title" => "BOOK NOW YOUR PAGE!",
-        "text" => "Sign up now to be one of the first users of Mosaiqo.", 
-        "button" => "SIGN UP" 
+        "title" => "RESERVA ARA LA TEVA PÀGINA!",
+        "text" => "Registra't per ser un dels primers usuaris de Mosaiqo.", 
+        "button" => "REGISTRA'T" 
     ],
     // FOOTER
     "footer" => [
-        "cite" => "In Mosaiqo we believe we can help many more people, have their own website.
-                   <br>Independent of wherever he is or whatever their idea is.
-                   <br>We believe in a free and available internet for everyone.",
-        "social" => "Social Networks",
-        "contact" => "Stay in Contact",
-        "rights" => "All rights reserved.",
+        "cite" => "A Mosaiqo creiem que podem ajudar a que molta més gent tingui el seu lloc web, 
+                   <br>independentment d'on sigui, o quina sigui la seva idea.
+                   <br>Creiem en un internet lliure i l'abast de tots.",
+        "social" => "Xarxes socials",
+        "contact" => "Estem en contacte",
+        "rights" => "Tots els drets reservats",
     ],
     // COOKIES
     "cookies" => [
-        "text" => "In Mosaiqo we believe we can help many more people, have their own website.
-                   <br>Independent of wherever he is or whatever their idea is.
-                   <br>We believe in a free and available internet for everyone."
+        "message" => "<strong>Mosaiqo utilitza ​_cookies_​ pròpies i de tercers per tal de millorar la teva experiència en la nostra web.</strong> 
+                      Si continues navegant, considerarem que n’acceptes el seu ús."
     ],
+
+    "suscriptions" => [
+        'success' => "Molt bé! T’has subscrit a la nostra Beta. Aviat rebràs un mail amb més informació!",
+        'error' => "Ups! S’ha produït algun error i no hem pogut processar la teva petició. Torna-ho a provar."
+    ]
 
 ];
