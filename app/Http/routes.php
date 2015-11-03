@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/suscriptions', ['as' => "suscriptions.store", "uses" => "SuscriptionsController@store"]);

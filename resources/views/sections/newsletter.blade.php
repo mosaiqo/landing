@@ -7,8 +7,9 @@
             </article>
         </div>
         <div class="col-sm-12 col-lg-7 animated" data-animation="fadeInRight" data-duration="500">
-            <form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="" method="post">
+            <form class="form mailchimp-form subscribe-form" style="padding-top: 10px;" action="{{ route("suscriptions.store") }}" method="post">
                 <div class="form-group form-inline">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <input size="15" type="text" class="form-control required" name="fullname" 
                         placeholder="{!! trans("page.register.form.name") !!}" />
                     <input size="25" type="email" class="form-control required" name="email" 

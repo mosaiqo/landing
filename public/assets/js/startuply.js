@@ -328,26 +328,34 @@ Startuply = {
 
         mailchimpHandler = function (event) {
             event.preventDefault();
-
-            var $firstNameField = $(this).find('[name=FNAME]'),
-                $lastNameField = $(this).find('[name=LNAME]'),
-                $fullnameField = $(this).find('[name=FULLNAME]'),
-                $emailField = $(this).find('[name=EMAIL]'),
-                $phoneField = $(this).find('[name=PHONE]'),
+            var $firstNameField = $(this).find('[name=fname]'),
+                $lastNameField = $(this).find('[name=lname]'),
+                $fullnameField = $(this).find('[name=fullname]'),
+                $emailField = $(this).find('[name=email]'),
+                $phoneField = $(this).find('[name=phone]'),
+                $tokenField = $(this).find('[name=_token]'),
                 $responseBlock = $(this).find('.response'),
                 fullname, fname, lname, email, phone, data = {};
 
             if ( $fullnameField.length && $fullnameField.val().length ) {
+                
                 fullname = $fullnameField.val().split(' ');
                 fname = fullname[0];
 
-                if ( fullname.length > 1 ) lname = fullname[1];
+                if ( fullname.length > 1 ) 
+                {
+                    fullname.shift();
+                    lname = fullname.join(" ");;
+                }
             }
 
             if ( $firstNameField.length && $firstNameField.val().length ) fname = $firstNameField.val();
             if ( $lastNameField.length && $lastNameField.val().length ) lname = $lastNameField.val();
+            if ( $tokenField.length && $tokenField.val().length ) token = $tokenField.val();
+            
             if ( fname ) data.fname = escape(fname);
-            if ( lname ) data.lname = escape(lname);
+            if ( lname ) data.lname = lname;
+            if ( token ) data._token = escape(token);
 
             if ( $emailField.length && $emailField.val().length ) {
                 email = $emailField.val();
@@ -361,23 +369,40 @@ Startuply = {
 
             if ( typeof toastr == 'undefined' ) $responseBlock.html('<span class="notice_message">Adding email address...</span>');
 
+
             data.ajax = true;
 
             $.ajax({
-                url: '/assets/mailchimp/inc/store-address.php',
+                url: $(this).attr("action"),
+                method : $(this).attr('method'),
                 data: data,
 
-                success: function(msg) {
-                    if ( msg.indexOf('Success') != -1 ) {
-                        if ( typeof toastr != 'undefined' ) toastr.success('Success! You are now subscribed to our newsletter!');
-                        else if ( $responseBlock.length ) $responseBlock.html('<span class="success-message">Success! You are now subscribed to our newsletter!</span>');
+                success: function(data, textStatus, jqXHR) {
+                    if ( data.status == 200  ) {
+                        if ( typeof toastr != 'undefined' ) toastr.success(data.message);
+                        else if ( $responseBlock.length ) $responseBlock.html('<span class="success-message">'+data.message+'</span>');
 
-                    } else {
-                        if ( typeof toastr != 'undefined' ) toastr.error(msg);
-                        else if ( $responseBlock.length ) $responseBlock.html('<span class="error-message">' + msg + '</span>');
-
+                    } 
+                    else 
+                    {
+                        if ( typeof toastr != 'undefined' ) toastr.error(data.message);
+                        else if ( $responseBlock.length ) $responseBlock.html('<span class="error-message">' + data.message + '</span>');    
                     }
+                },
+                error: function(data, textStatus, jqXHR) 
+                {
+                    message = '';
+                    $.each(jQuery.parseJSON(data.responseText), function(i, value){
+                        $.each(value, function(i, msg)
+                        {
+                            message += msg + "<br>";
+                        });
+                    });
+
+                    if ( typeof toastr != 'undefined' ) toastr.error(message);
+                    else if ( $responseBlock.length ) $responseBlock.html('<span class="error-message">' + message + '</span>');    
                 }
+
             });
         }
 

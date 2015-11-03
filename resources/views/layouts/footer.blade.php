@@ -11,18 +11,12 @@
             <div class="col-sm-5 social-wrap col-xs-12">
                 <strong class="heading">{!! trans("page.footer.social") !!}</strong>
                 <ul class="list-inline socials">
-                    <li><a href="#"><span class="icon icon-socialmedia-08"></span></a></li>
-                    <li><a href="#"><span class="icon icon-socialmedia-09"></span></a></li>
-                    <li><a href="#"><span class="icon icon-socialmedia-04"></span></a></li>
-                    <li><a href="#"><span class="icon icon-socialmedia-07"></span></a></li>
+                    <li><a href="https://github.com/mosaiqo"><span class="icon fa fa-github"></span></a></li>
+                    <li><a href="https://www.facebook.com/mosaiqo-237222623047483/"><span class="icon fa fa-facebook"></span></a></li>
+                    <li><a href="https://www.facebook.com/mosaiqo-237222623047483/"><span class="icon fa fa-twitter"></span></a></li>
+                    <li><a href="https://www.linkedin.com/company/mosaiqo"><span class="icon fa fa-linkedin"></span></a></li>
                 </ul>
-                <ul class="list-inline socials">
 
-                    <li><a href="#"><span class="icon icon-socialmedia-05"></span></a></li>
-                    <li><a href="#"><span class="icon icon-socialmedia-20"></span></a></li>
-                    <li><a href="#"><span class="icon icon-socialmedia-26"></span></a></li>
-                    <li><a href="#"><span class="icon icon-socialmedia-16"></span></a></li>
-                </ul>
             </div>
             <div class="col-sm-3 col-xs-12">
                 <strong class="heading">{!! trans("page.footer.contact") !!}</strong>

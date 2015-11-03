@@ -181,4 +181,9 @@ return [
                       Si continuas navegando, consideramos que aceptas su uso."
     ],
 
+    "suscriptions" => [
+        'success' => "Bien! Te has suscrito a nuestra version BETA, pronto recibiras un email con mas información!",
+        'error' => "Error! Ha habido algun error y no hemos podido procesar tu petición, vuelve a intentarlo!"
+    ]
+
 ];

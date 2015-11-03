@@ -89,8 +89,13 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'fname' => [
+            'required' => 'The name field is required.',
+        ],
+        'email' => [
+            'unique' => 'This email has already been taken.',
+            'email' =>   'This is not a valid email address.',
+            'required' => 'The email field is required.',
         ],
     ],
 

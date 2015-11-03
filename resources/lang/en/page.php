@@ -180,4 +180,9 @@ return [
                       If you continue using this site, we will consider that you accept it."
     ],
 
+    "suscriptions" => [
+        'success' => "Success! You are now subscribed to our BETA version, you will receive an email with further information!",
+        'error' => "Error! Some error occurs and we couldn't process the request, try it again!"
+    ]
+
 ];
