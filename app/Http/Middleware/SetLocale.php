@@ -67,7 +67,7 @@ class SetLocale
         $languages = ["es" => "Español", "en" => "English", "ca" => "Catalá",/*"de" => "Deutsch"*/];
         
         View::share("google", $google);
-        View::share("gloabalGoogle", $globalGoogle);
+        View::share("globalGoogle", $globalGoogle);
         View::share("hotjar", $hotjar);
         View::share("languages", $languages);
         View::share("locales", $locales);
