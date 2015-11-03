@@ -150,7 +150,7 @@ return [
        ],
        "seventh" => [
             "label" => "SUPORT",
-            "text" => "Oferim suport 24/7, en totes les llengües suportades pel sistema.ema."
+            "text" => "Oferim suport 24/7, en totes les llengües suportades pel sistema."
        ],
        "eight" => [
             "label" => "IMMEDIAT",
