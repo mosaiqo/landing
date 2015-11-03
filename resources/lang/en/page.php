@@ -177,7 +177,7 @@ return [
     // COOKIES
     "cookies" => [
         "message" => "<strong>Mosaiqo makes use of our own and third party cookies on our websites to make a better user experience possible.</strong>
-                      If you continue surfing this site, we will consider that you accept it."
+                      If you continue using this site, we will consider that you accept it."
     ],
 
 ];
