@@ -180,7 +180,7 @@ return [
     ],
     // COOKIES
     "cookies" => [
-        "message" => "<strong>Mosaiqo utilitza ​_cookies_​ pròpies i de tercers per tal de millorar la teva experiència en la nostra web.</strong> 
+        "message" => "<strong>Mosaiqo utilitza ​cookies​ pròpies i de tercers per tal de millorar la teva experiència en la nostra web.</strong> 
                       Si continues navegant, considerarem que n’acceptes el seu ús."
     ],
 
