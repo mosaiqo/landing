@@ -13,7 +13,7 @@ return [
         "team" => "TEAM",
         "contact" => "STAY IN CONTACT",
         "language" => [
-            "label" => "Do you prefer an other language?"
+            "label" => "Do you prefer another language?"
         ]
     ],
 
