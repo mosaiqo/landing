@@ -7797,10 +7797,9 @@ blockquote {
 }
 
 #cookies.alert{
-	position: absolute;
+	position: fixed;
 	z-index: 9999;
-	top: 80vh;
-	bottom : 0;
+	bottom : 10px;
 	left : 10%;
 	right : 10%;
 	width: 80%;
