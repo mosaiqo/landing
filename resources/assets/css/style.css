@@ -7796,12 +7796,21 @@ blockquote {
 
 }
 
-#cookies{
-	position: fixed;
+#cookies.alert{
+	position: absolute;
 	z-index: 9999;
+	top: 80vh;
 	bottom : 0;
 	left : 10%;
 	right : 10%;
 	width: 80%;
+	padding: 15px;
+	a.close{
+		font-size: 35px !important;	
+	}
+}
+#cookiesModal
+{
+	margin-top: 100px;
 }
 

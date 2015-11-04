@@ -11,6 +11,10 @@ var Startuply;
 
     $(document).on('ready', function () {
         Startuply.init();
+        if(window.innerWidth < 992)
+        {
+            $('#cookiesModal').modal('show')
+        }
         $('.static-header').vegas({
             slides: [
                 { src: '/img/background/background10.jpg' },
