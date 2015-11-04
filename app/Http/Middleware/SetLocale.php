@@ -19,6 +19,7 @@ class SetLocale
     {
         $hotjar = 00000;
         $globalGoogle = 'UA-32678673-1';
+        $google = '0';
 
         if($request->has("lang"))
         {

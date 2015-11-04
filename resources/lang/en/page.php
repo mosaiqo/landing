@@ -40,9 +40,9 @@ return [
                     ],
                     "title" => "<span class='highlight'>PRODUCT</span> OR <span class='highlight'>SERVICE</span>",
                     "sub-title" => "To attract customers, you need a site." ,
-                    "text" => "You will have your online store in a few of minutes, 
-                                  ready to start operating your business, without complications. <br>
-                                  ¿Prefer a blog? In only 5 minutes you'll be writing on your first article. "
+                    "text" => "You will have your online store in a few minutes, 
+                               ready to start operating your business, without complications. <br>
+                               ¿Prefer a blog? In only 5 minutes you'll be writing on your first article. "
                 ]
                 
             ],
