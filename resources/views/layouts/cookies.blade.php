@@ -6,8 +6,8 @@
 	{!!trans('page.cookies.message')!!}
 </div>
 
-<div class="modal fade hidden-lg hidden-md" id="cookiesModal">
-  <div class="modal-dialog">
+<div class="modal fade bs-example-modal-sm" id="cookiesModal">
+  <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-body">
         	{!!trans('page.cookies.message')!!}
