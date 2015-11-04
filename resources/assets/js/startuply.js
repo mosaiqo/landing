@@ -11,21 +11,29 @@ var Startuply;
 
     $(document).on('ready', function () {
         Startuply.init();
-        if(window.innerWidth < 992)
+        $imageAssets = '';
+        if(window.innerWidth <= 992)
         {
             $('#cookiesModal').modal('show')
         }
+
+        if(window.innerWidth <= 768)
+        {
+            $imageAssets = 'phone/';
+        }
+
+
         $('.static-header').vegas({
             slides: [
-                { src: '/img/background/background10.jpg' },
-                { src: '/img/background/background9.jpg' },
-                { src: '/img/background/background1.jpg' },
-                { src: '/img/background/background2.jpg' },
-                { src: '/img/background/background3.jpg' },
-                { src: '/img/background/background5.jpg' },
-                { src: '/img/background/background6.jpg' },
-                { src: '/img/background/background7.jpg' },
-                { src: '/img/background/background8.jpg' },
+                { src: '/img/background/'+$imageAssets+'background10.jpg' },
+                { src: '/img/background/'+$imageAssets+'background9.jpg' },
+                { src: '/img/background/'+$imageAssets+'background1.jpg' },
+                { src: '/img/background/'+$imageAssets+'background2.jpg' },
+                { src: '/img/background/'+$imageAssets+'background3.jpg' },
+                { src: '/img/background/'+$imageAssets+'background5.jpg' },
+                { src: '/img/background/'+$imageAssets+'background6.jpg' },
+                { src: '/img/background/'+$imageAssets+'background7.jpg' },
+                { src: '/img/background/'+$imageAssets+'background8.jpg' },
             ]
         });
     });
