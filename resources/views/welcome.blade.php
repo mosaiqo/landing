@@ -103,6 +103,13 @@
          <script type="text/javascript">
              $(".mailchimp-form").on('suscribed', function(event){
                 woopra.track("suscribed", { email : event.email, name: event.name });
+                woopra.identify({
+                    email:  event.email,
+                    name: event.name ,
+                });
+
+                // The identify code should be added before the "track()" function
+                woopra.track();
                 ga('send', 'event', 'button', 'click', 'suscribed');
             });
 
