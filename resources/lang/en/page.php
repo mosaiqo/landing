@@ -85,7 +85,7 @@ return [
     // REGISTER
     "register" => [
         "title" => "SIGN UP NOW!",
-        "sub-title" => "Be one of the first 100 members free, <br> access to our \"BETA\"!",
+        "sub-title" => "Be one of the first 100 members, <br> to have free access to our \"BETA\"!",
         "form" => [
             "name" => "Your Full Name",
             "mail" => "your@mail.com",

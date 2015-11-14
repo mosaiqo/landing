@@ -86,7 +86,7 @@ return [
     // REGISTER
     "register" => [
         "title" => "REGISTRATE YA!",
-        "sub-title" => "Sé uno de los primero 100 ususarios <br>usuarios en tener acceso a nuestra \"BETA\"!",
+        "sub-title" => "Sé uno de los primero 100 ususarios <br>en tener acceso gratuito a nuestra \"BETA\"!",
         "form" => [
             "name" => "Nombre Completo",
             "mail" => "tu@email.es",

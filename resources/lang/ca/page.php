@@ -86,7 +86,7 @@ return [
     // REGISTER
     "register" => [
         "title" => "REGISTRA'T!",
-        "sub-title" => "Siguis un dels primers 100 usuaris <br> en tenir accés a la nostra BETA!",
+        "sub-title" => "Siguis un dels primers 100 usuaris <br> en tenir accés gratis a la nostra BETA!",
         "form" => [
             "name" => "Nom complert",
             "mail" => "elTeu@correu.cat",
