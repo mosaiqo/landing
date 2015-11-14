@@ -403,6 +403,10 @@ Startuply = {
                 data: data,
 
                 success: function(data, textStatus, jqXHR) {
+                    woopra.track("suscribed", {
+                        email : email
+                    });
+                    ga('send', 'event', 'button', 'click', 'suscribed');
                     if ( data.status == 200  ) {
                         if ( typeof toastr != 'undefined' ) toastr.success(data.message);
                         else if ( $responseBlock.length ) $responseBlock.html('<span class="success-message">'+data.message+'</span>');
