@@ -21,7 +21,7 @@ return [
     "hero" => [
         "heading" => "<span class='highlight'>Anyone</span> can now have their website.",
         "sub-heading" => "Don't wait, launch it now.",
-        "action-button" => "SIGN UP NOW",
+        "action-button" => "SIGN UP NOW FOR FREE",
          "image" => [
             "src" => "/img/features/app_block_en.png",
             "alt" => "Mosaiqo Dashboard",
@@ -85,7 +85,7 @@ return [
     // REGISTER
     "register" => [
         "title" => "SIGN UP NOW!",
-        "sub-title" => "Be one of the first members to have a 30 day trial for free, <br> as soon as we open the \"BETA\" to the general public!",
+        "sub-title" => "Be one of the first 100 members free, <br> access to our \"BETA\"!",
         "form" => [
             "name" => "Your Full Name",
             "mail" => "your@mail.com",

@@ -21,7 +21,7 @@ return [
     "hero" => [
         "heading" => " Ara <span class='highlight'>tothom</span> pot tenir la seva web.",
         "sub-heading" => "No esperis més, crea la teva web.",
-        "action-button" => "REGISTRA'T ARA",
+        "action-button" => "Registra't gratis",
         "image" => [
             "src" => "/img/features/app_block_ca.png",
             "alt" => "Mosaiqo Dashboard",
@@ -86,7 +86,7 @@ return [
     // REGISTER
     "register" => [
         "title" => "REGISTRA'T!",
-        "sub-title" => "Siguis un dels primers en gaudir de 30 dies gratuïts,<br> quan obrim la Beta al públic!",
+        "sub-title" => "Siguis un dels primers 100 usuaris <br> en tenir accés a la nostra BETA!",
         "form" => [
             "name" => "Nom complert",
             "mail" => "elTeu@correu.cat",

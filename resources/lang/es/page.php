@@ -21,7 +21,7 @@ return [
     "hero" => [
         "heading" => "<span class='highlight'>Cualquiera</span> puede tener ahora su web.",
         "sub-heading" => "No espere más, lance ya su web.",
-        "action-button" => "REGISTRATE AHORA",
+        "action-button" => "REGISTRATE GRATIS",
         "image" => [
             "src" => "/img/features/app_block_es.png",
             "alt" => "Mosaiqo Dashboard",
@@ -86,7 +86,7 @@ return [
     // REGISTER
     "register" => [
         "title" => "REGISTRATE YA!",
-        "sub-title" => "Sé uno de los primero en tener 30 días gratuitos,<br>en cuanto abramos la \"BETA\" al publico general!",
+        "sub-title" => "Sé uno de los primero 100 ususarios <br>usuarios en tener acceso a nuestra \"BETA\"!",
         "form" => [
             "name" => "Nombre Completo",
             "mail" => "tu@email.es",
