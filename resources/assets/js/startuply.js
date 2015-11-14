@@ -353,7 +353,7 @@ Startuply = {
 
         mailchimpHandler = function (event) {
             event.preventDefault();
-            console.log(event.currentTarget);
+            
             var $firstNameField = $(this).find('[name=fname]'),
                 $lastNameField = $(this).find('[name=lname]'),
                 $fullnameField = $(this).find('[name=fullname]'),
@@ -406,7 +406,7 @@ Startuply = {
                 success: function(data, textStatus, jqXHR) {
                     var event = jQuery.Event( "suscribed" );
                     event.email =  email;
-                    event.name = fname;
+                    event.name = fullname;
                     $(".mailchimp-form").trigger(event);                   
                     if ( data.status == 200  ) {
                         if ( typeof toastr != 'undefined' ) toastr.success(data.message);
