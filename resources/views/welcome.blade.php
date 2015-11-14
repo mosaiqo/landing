@@ -64,6 +64,7 @@
         </script>
         <!-- End of Woopra Code -->
     @endif
+   
 </head>
 
 <body id="landing-page" class="landing-page">
@@ -98,6 +99,14 @@
         <script type="text/javascript" src="/js/jquery-2.1.4.min.js?ver=1"></script>
     <!--<![endif]-->
     <script type="text/javascript" src="/js/all.js"></script>
+    @if(App::environment("production"))
+         <script type="text/javascript">
+             $(".mailchimp-form").on('suscribed', function(event){
+                woopra.track("suscribed", { email : event.email, name: event.name });
+                ga('send', 'event', 'button', 'click', 'suscribed');
+            });
 
+        </script>
+    @endif
 </body>
 </html>

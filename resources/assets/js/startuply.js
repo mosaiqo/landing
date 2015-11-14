@@ -353,6 +353,7 @@ Startuply = {
 
         mailchimpHandler = function (event) {
             event.preventDefault();
+            console.log(event.currentTarget);
             var $firstNameField = $(this).find('[name=fname]'),
                 $lastNameField = $(this).find('[name=lname]'),
                 $fullnameField = $(this).find('[name=fullname]'),
@@ -361,7 +362,6 @@ Startuply = {
                 $tokenField = $(this).find('[name=_token]'),
                 $responseBlock = $(this).find('.response'),
                 fullname, fname, lname, email, phone, data = {};
-
             if ( $fullnameField.length && $fullnameField.val().length ) {
                 
                 fullname = $fullnameField.val().split(' ');
@@ -392,6 +392,7 @@ Startuply = {
                 data.phone = escape(phone);
             }
 
+
             if ( typeof toastr == 'undefined' ) $responseBlock.html('<span class="notice_message">Adding email address...</span>');
 
 
@@ -403,10 +404,10 @@ Startuply = {
                 data: data,
 
                 success: function(data, textStatus, jqXHR) {
-                    woopra.track("suscribed", {
-                        email : email
-                    });
-                    ga('send', 'event', 'button', 'click', 'suscribed');
+                    var event = jQuery.Event( "suscribed" );
+                    event.email =  email;
+                    event.name = fname;
+                    $(".mailchimp-form").trigger(event);                   
                     if ( data.status == 200  ) {
                         if ( typeof toastr != 'undefined' ) toastr.success(data.message);
                         else if ( $responseBlock.length ) $responseBlock.html('<span class="success-message">'+data.message+'</span>');
