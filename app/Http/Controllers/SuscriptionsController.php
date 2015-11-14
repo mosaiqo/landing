@@ -21,7 +21,7 @@ class SuscriptionsController extends Controller
   	$suscriber = Suscriber::create([
 	  		"email" => $request->get("email"),
 	  		"first_name" => $request->get("fname"),
-	  		"last_name" => $request->get("lname"),
+	  		"last_name" => $request->has("lname")? $request->get("lname"): "",
 	  		"locale" => App::getLocale(),
 	  		"domain" =>  $request->server("HTTP_HOST"),
 	  		"ip" => $request->server("REMOTE_ADDR"),
