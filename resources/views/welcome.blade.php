@@ -51,6 +51,22 @@
             ga('send', 'pageview');
 
         </script>
+        <!-- Facebook Conversion Code for Clientes potenciales - mosaiqo.cat -->
+        <script>(function() {
+          var _fbq = window._fbq || (window._fbq = []);
+          if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+          }
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', '{{$facebookPotencial}}', {'value':'0.00','currency':'EUR'}]);
+        </script>
+        <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev={{$facebookPotencial}}&amp;cd[value]=0.00&amp;cd[currency]=EUR&amp;noscript=1" /></noscript>
         <!-- Start of Woopra Code -->
         <script>
         (function(){
@@ -104,13 +120,15 @@
              $(".mailchimp-form").on('suscribed', function(event){
                 woopra.track("suscribed", { email : event.email, name: event.name });
                 woopra.identify({
-                    email:  event.email,
+                    email: event.email,
                     name: event.name ,
                 });
 
                 // The identify code should be added before the "track()" function
                 woopra.track();
                 ga('send', 'event', 'button', 'click', 'suscribed');
+
+                window._fbq.push(['track', '{{$facebookRegistered}}', {'value':'0.00','currency':'EUR'}]);
             });
 
         </script>

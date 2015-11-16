@@ -20,6 +20,8 @@ class SetLocale
         $hotjar = 00000;
         $globalGoogle = 'UA-32678673-1';
         $google = '0';
+        $facebookRegistered = '0';
+        $facebookPotencial = '0';
 
         if($request->has("lang"))
         {
@@ -38,6 +40,8 @@ class SetLocale
                 case "www.mosaiqo.es" : 
                 case "es.mosaiqo.com" : 
                     $locale = "es"; 
+                    $facebookRegistered = "6036198498486";
+                    $facebookPotencial = "6036198514086";
                     $hotjar = 97688;
                     $google = 'UA-32678673-2';
                     break;
@@ -46,12 +50,16 @@ class SetLocale
                 case "de.mosaiqo.com" : 
                     $locale = "de";
                     $hotjar = 00000; 
+                    $facebookRegistered = '0';
+                    $facebookPotencial = '0';
                     $google = ""; 
                     break;
                 case "mosaiqo.cat" : 
                 case "www.mosaiqo.cat" : 
                 case "cat.mosaiqo.com" : 
-                    $locale = "ca"; 
+                    $locale = "ca";
+                    $facebookRegistered = "6036197900086";
+                    $facebookPotencial = "6036198328686";
                     $hotjar = 97689;
                     $google = 'UA-32678673-3'; 
                     break;
@@ -60,6 +68,8 @@ class SetLocale
                 case "en.mosaiqo.com" : 
                 default            :
                     $hotjar = 49650; 
+                    $facebookRegistered = "6036198535486";
+                    $facebookPotencial = "6036198559086";
                     $google = 'UA-32678673-4';
                     $locale = "en"; 
             }    
@@ -69,6 +79,8 @@ class SetLocale
         
         View::share("google", $google);
         View::share("globalGoogle", $globalGoogle);
+        View::share("facebookRegistered", $facebookRegistered);
+        View::share("facebookPotencial", $facebookPotencial);
         View::share("hotjar", $hotjar);
         View::share("languages", $languages);
         View::share("locales", $locales);
