@@ -22,6 +22,7 @@ class SetLocale
         $google = '0';
         $facebookRegistered = '0';
         $facebookPotencial = '0';
+        $mixpanel = '0';
 
         if($request->has("lang"))
         {
@@ -44,6 +45,7 @@ class SetLocale
                     $facebookPotencial = "6036198514086";
                     $hotjar = 97688;
                     $google = 'UA-32678673-2';
+                    $mixpanel = "d2b30d72b75527d25bb04cd825a9c1ca";
                     break;
                 case "mosaiqo.de" : 
                 case "www.mosaiqo.de" : 
@@ -53,6 +55,7 @@ class SetLocale
                     $facebookRegistered = '0';
                     $facebookPotencial = '0';
                     $google = ""; 
+                    $mixpanel = "";
                     break;
                 case "mosaiqo.cat" : 
                 case "www.mosaiqo.cat" : 
@@ -62,6 +65,7 @@ class SetLocale
                     $facebookPotencial = "6036198328686";
                     $hotjar = 97689;
                     $google = 'UA-32678673-3'; 
+                    $mixpanel = "2dc12505bc87d7a72ed57936582eb2cf";
                     break;
                 case "mosaiqo.com" : 
                 case "www.mosaiqo.com" : 
@@ -71,7 +75,8 @@ class SetLocale
                     $facebookRegistered = "6036198535486";
                     $facebookPotencial = "6036198559086";
                     $google = 'UA-32678673-4';
-                    $locale = "en"; 
+                    $locale = "en";
+                    $mixpanel = "0c938cd6db9606d670e3797b4e5a308b";
             }    
         }
         $locales = ["es" => "http://mosaiqo.es", "en" => "http://mosaiqo.com", "ca" => "http://mosaiqo.cat",/*"de" => "http://mosaiqo.de"*/];
@@ -85,6 +90,7 @@ class SetLocale
         View::share("languages", $languages);
         View::share("locales", $locales);
         View::share("alternate", $locale);
+        View::share("mixpanel", $mixpanel);
 
         App::setLocale($locale);
         return $next($request);
